@@ -55,6 +55,28 @@ public class Program {
 		intArrayList.delete(130);
 		intArrayList.display();
 
+		System.out.println("=====List=====");
+
+		ListInterface listInterface = new ListInterface(5);
+		listInterface.insert(110, 0);
+		listInterface.insert(120, 1);
+		listInterface.insert(130, 2);
+		listInterface.insert(140, 3);
+		listInterface.insert(150, 4);
+
+		listInterface.traverse();
+
+		System.out.println("=====Search In List");
+		listInterface.search(130);
+
+		System.out.println("=====update In List");
+		listInterface.update(140, 160);
+		listInterface.traverse();
+
+		System.out.println("=====Delete In List");
+		listInterface.delete(160);
+		listInterface.traverse();
+
 	}
 
 }
