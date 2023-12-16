@@ -77,6 +77,32 @@ public class Program {
 		listInterface.delete(160);
 		listInterface.traverse();
 
+		System.out.println("=====Linklist=====");
+
+		LinklistTest linklistTest = new LinklistTest();
+
+		linklistTest.insert(110);
+		linklistTest.insert(120);
+		linklistTest.insert(130);
+		linklistTest.insert(140);
+		linklistTest.insert(150);
+
+		System.out.println("=====Display Linklist");
+
+		linklistTest.traverse();
+
+		System.out.println("=====Search In Linklist");
+		linklistTest.search(130);
+
+		System.out.println("=====update In Linklist");
+
+		linklistTest.update(110, 160);
+		linklistTest.traverse();
+
+		System.out.println("=====Delete In Linklist");
+		linklistTest.delete(160);
+		linklistTest.traverse();
+
 	}
 
 }
